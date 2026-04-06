@@ -55,8 +55,8 @@ const block = document.querySelector(".hero__article")
 const img = document.querySelector(".hero__img")
 const biggerGap = () => {
   let count = window.scrollY
-  block.style.transform = `translateX(${-count*1.2}px)`
-  img.style.transform = `translateX(${count*1.2}px)`
+  block.style.transform = `translateX(${-count*0.2}px)`
+  img.style.transform = `translateX(${count*0.2}px)`
 }
 window.addEventListener("scroll", biggerGap)
 
