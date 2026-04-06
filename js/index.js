@@ -19,11 +19,7 @@ const sendData = () => {
 
 const ask = document.querySelector(".hero__intro[name='addname']")
 let clientName = prompt("what is your name?")
-if(clientName == true){
 ask.innerHTML += `${clientName}`
-} else{
-  ask.innerHTML += 'Friend'
-}
 
 const button = document.querySelector(".button")
 const handler = () => {
