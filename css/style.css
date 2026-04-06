@@ -1,3 +1,1143 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    height: 5000px;
+
+}
+.header {
+    width: 100%;
+    padding: 40px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    position: fixed;
+    background-color: white;
+    height: 100px;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 310px;
+    align-items: center;
+    justify-content: start;
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.header__toggle {
+    width: 40px;
+    display: none;
+    height: 40px;
+}
+
+.header__options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    list-style-type: none;
+}
+
+.header_link {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    transition: 0.5s ease-in-out;
+}
+
+.header_link:hover {
+    font-family: "Tourney", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.header__button {
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+.header__button:active {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.main {
+    width: 100%;
+}
+
+.hero,
+.hero2,
+.hero3,
+.hero4,
+.hero5,
+.hero6,
+.hero7,
+.hero8,
+.hero9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 140px 70px 50px 70px;
+    width: 100%;
+}
+.hero{
+    transition: 0.1s ease;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.hero__article {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.hero__block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero__intro,
+.hero__intro--active,
+.hero__intro--active2 {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 400;
+}
+
+.hero__intro--active {
+    font-weight: 900;
+}
+
+.hero__intro--active2 {
+    font-family: "Tourney", sans-serif;
+}
+
+.hero__text {
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+    line-height: 30px;
+    width: 600px;
+}
+
+.hero__links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.hero__link {
+    width: 50px;
+    height: 50px;
+}
+
+.hero__linker {
+    width: 56px;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.hero__linker:hover {
+    transform: scale(1.2);
+}
+
+.hero__img {
+    width: 630px;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.hero2,
+.hero3,
+.hero5,
+.hero6 {
+    flex-direction: column;
+    padding: 80px 40px;
+}
+
+.hero2__img {
+    padding: 24px;
+}
+
+.hero2__skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 1350px;
+}
+
+.hero2__text,
+.hero2__text--active,
+.hero3__text,
+.hero3__text--active {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.hero2__text--active,
+.hero3__text--active {
+    font-family: "Tourney", sans-serif;
+}
+
+.hero3,
+.hero5,
+.hero9 {
+    background-color: black;
+    color: white;
+}
+
+.hero3__block,
+.hero3__block1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.hero3__block1,
+.hero3__block1--active {
+    width: 1200px;
+    padding: 24px 30px;
+    gap: 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(75, 75, 75);
+    transition: 0.5s ease;
+}
+
+.hero3__block1:hover {
+    background-color: rgb(52, 52, 52);
+}
+
+.hero3__intro {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.hero3__mini-block {
+    display: flex;
+    flex-direction: row;
+    gap: 550px;
+    align-items: center;
+}
+
+.hero3__element,
+.hero6__block {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.hero3__date {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(205, 203, 203);
+}
+
+.hero4 {
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.hero4__article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero4__text {
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    width: 600px;
+}
+
+.hero4__img {
+    width: 520px;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+.hero5 {
+    gap: 50px;
+}
+
+.hero5__block,
+.hero5__block--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero5__block--active {
+    flex-direction: row-reverse;
+}
+
+.hero5__number {
+    font-family: "Tourney", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.hero5__about {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.hero5__context {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+}
+
+.hero6__block {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero6__image {
+    width: 96px;
+}
+
+.hero6__mini-block,
+.hero6__mini-block--activate {
+    width: 400px;
+    border-radius: 20px;
+    border: none;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 5px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 5px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 5px 6px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.hero6__mini-block--activate {
+    background-color: black;
+    color: white;
+}
+
+.hero6__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.hero6__name,
+.hero6__name--active {
+    font-size: 23px;
+    font-weight: 600;
+    border-top: 3px solid black;
+    padding: 25px 0 0 0;
+}
+
+.hero6__name--active {
+    border-color: white;
+}
+
+.hero7 {
+    padding: 40px 20px 70px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.hero7__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero7__input,
+.hero7__input--active {
+    width: 500px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.hero7__input--active {
+    max-width: 500px;
+    max-height: 250px;
+    min-height: 100px;
+}
+
+.hero7__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero7__button {
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 19px;
+}
+
+.hero7__button:active {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.hero7__block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero7__text {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 900;
+}
+
+.hero7__text--active {
+    font-family: "Tourney", sans-serif;
+    font-weight: 300;
+}
+
+.hero7__email {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+}
+.hero8{
+    padding: 40px 50px;
+    flex-direction: column;
+    gap: 40px;
+    height: 300px;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.hero8__text{
+    font-size: 30px;
+    font-weight: 600;
+}
+.hero8__blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+.hero8__block,
+.hero8__block--active{
+    width: 100px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    transition: 0.1s ease;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.hero8__block:active{
+    background-color: black;
+    color: white;
+}
+.hero8__answer{
+    display: none;
+    padding: 40px 50px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 60px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width: 70px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: none;
+}
+
+@media screen and (max-width:1430px) {
+    .header {
+        gap: 80px;
+    }
+
+    .header__logo {
+        width: 200px;
+    }
+
+    .header__menu {
+        gap: 70px;
+    }
+
+    .header__options {
+        gap: 50px;
+    }
+
+    .header_link {
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .header_link:hover {
+        font-size: 18px;
+    }
+
+    .header__button {
+        width: 80px;
+        padding: 9px;
+        font-size: 16px;
+    }
+
+    .hero {
+        gap: 30px;
+
+    }
+
+    .hero__article {
+        width: 450px;
+    }
+
+    .hero__intro,
+    .hero__intro--active,
+    .hero__intro--active2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .hero__text {
+        font-size: 15px;
+        color: rgb(78, 78, 78);
+        line-height: 30px;
+        width: 450px;
+    }
+
+    .hero__links {
+        gap: 20px;
+    }
+
+    .hero__link {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero__linker {
+        width: 45px;
+    }
+
+    .hero__img {
+        width: 400px;
+    }
+
+    .hero2__img {
+        padding: 20px;
+    }
+
+    .hero2__skills {
+        gap: 10px;
+        width: 950px;
+    }
+
+    .hero2__text,
+    .hero2__text--active,
+    .hero3__text,
+    .hero3__text--active {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .hero3__block1,
+    .hero3__block1--active {
+        width: 930px;
+    }
+
+    .hero3__intro {
+        font-size: 19px;
+    }
+
+    .hero3__mini-block {
+        gap: 350px;
+    }
+
+    .hero3__element,
+    .hero6__block {
+        gap: 15px;
+    }
+
+    .hero3__date {
+        font-size: 17px;
+    }
+
+    .hero4 {
+        gap: 35px;
+    }
+
+    .hero4__article {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero4__text {
+        font-size: 17px;
+        width: 450px;
+    }
+
+    .hero4__img {
+        width: 390px;
+    }
+
+    .hero5 {
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .hero5__block,
+    .hero5__block--active {
+        gap: 30px;
+    }
+
+    .hero5__number {
+        font-size: 40px;
+    }
+
+    .hero5__about {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .hero5__context {
+        gap: 20px;
+        line-height: 35px;
+        width: 440px;
+    }
+
+    .hero5__img {
+        width: 440px;
+        object-fit: cover;
+    }
+
+    .hero6__block {
+        gap: 30px;
+    }
+
+    .hero6__image {
+        width: 80px;
+    }
+
+    .hero6__mini-block,
+    .hero6__mini-block--activate {
+        width: 280px;
+        padding: 20px 40px;
+        gap: 30px;
+    }
+
+    .hero6__text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .hero6__name,
+    .hero6__name--active {
+        font-size: 20px;
+    }
+
+    .hero7 {
+        gap: 70px;
+    }
+
+    .hero7__input,
+    .hero7__input--active {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .hero7__input--active {
+        max-width: 400px;
+    }
+
+    .hero7__button {
+        border-radius: 5px;
+        padding: 13px;
+        font-size: 16px;
+    }
+
+    .hero7__text {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero7__email {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .header {
+        gap: 50px;
+    }
+
+    .header__logo {
+        width: 180px;
+    }
+
+    .header__menu {
+        gap: 30px;
+    }
+
+    .header__options {
+        gap: 30px;
+    }
+
+    .header_link {
+        font-size: 16px;
+    }
+
+    .header_link:hover {
+        font-size: 16px;
+    }
+
+    .header__button {
+        width: 70px;
+        padding: 3px;
+        font-size: 14px;
+    }
+
+    .hero {
+        gap: 30px;
+        padding: 150px 0 50px 0;
+    }
+
+    .hero__article {
+        width: 320px;
+    }
+
+    .hero__intro,
+    .hero__intro--active,
+    .hero__intro--active2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hero__text {
+        font-size: 15px;
+        width: 320px;
+    }
+
+    .hero__img {
+        width: 350px;
+    }
+
+    .hero2 {
+        padding: 30px 10px;
+    }
+
+    .hero2__img {
+        width: 150px;
+    }
+
+    .hero2__skills {
+        gap: 5px;
+        width: 650px;
+    }
+
+    .hero3__block1,
+    .hero3__block1--active {
+        width: 610px;
+    }
+
+    .hero3__mini-block {
+        gap: 10px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .hero4 {
+        gap: 35px;
+        flex-direction: column;
+    }
+
+    .hero4__article {
+        gap: 15px;
+    }
+
+    .hero4__text {
+        font-size: 17px;
+        width: 620px;
+    }
+
+    .hero4__img {
+        width: 500px;
+    }
+
+    .hero5 {
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .hero5__block,
+    .hero5__block--active {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .hero5__context {
+        width: 600px;
+    }
+
+    .hero5__img {
+        width: 600px;
+    }
+
+    .hero6__block {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .hero6__image {
+        width: 96px;
+    }
+
+    .hero6__mini-block,
+    .hero6__mini-block--activate {
+        width: 500px;
+        padding: 30px 50px;
+        gap: 30px;
+    }
+
+    .hero7 {
+        flex-direction: column-reverse;
+    }
+
+    .hero7__input,
+    .hero7__input--active {
+        width: 550px;
+        font-size: 18px;
+    }
+
+    .hero7__block {
+        width: 600px;
+    }
+
+    .hero7__input--active {
+        max-width: 550px;
+    }
+
+    .hero7__text {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero7__email {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .header__toggle {
+        display: flex;
+        z-index: 2;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .header {
+        gap: 300px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__logo {
+        z-index: 2;
+    }
+
+    .active {
+        display: flex;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        width: 35vw;
+        height: 33vh;
+        flex-direction: column;
+        gap: 40px;
+        background-color: white;
+    }
+
+    .header__options {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero__article {
+        width: 400px;
+    }
+
+    .hero__text {
+        width: 400px;
+    }
+
+    .hero__img {
+        width: 400px;
+    }
+
+    .hero2__img {
+        width: 150px;
+    }
+
+    .hero2__skills {
+        width: 500px;
+    }
+
+    .hero3__block1,
+    .hero3__block1--active {
+        width: 450px;
+    }
+
+    .hero4__text {
+        font-size: 17px;
+        width: 450px;
+    }
+
+    .hero4__img {
+        width: 400px;
+    }
+
+    .hero5__context {
+        width: 400px;
+    }
+
+    .hero5__img {
+        width: 400px;
+    }
+
+    .hero6__mini-block,
+    .hero6__mini-block--activate {
+        width: 400px;
+        padding: 30px 50px;
+        gap: 30px;
+    }
+
+    .hero7__input,
+    .hero7__input--active {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .hero7__block {
+        width: 400px;
+    }
+
+    .hero7__input--active {
+        max-width: 400px;
+    }
+
+    .hero7__text {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero7__email {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .header {
+        gap: 120px;
+    }
+    .header__logo{
+        width: 120px;
+    }
+
+    .hero__article {
+        width: 300px;
+    }
+
+    .hero__text {
+        width: 300px;
+    }
+
+    .hero__img {
+        width: 300px;
+    }
+
+    .hero2__skills {
+        width: 350px;
+    }
+
+    .hero3__block1,
+    .hero3__block1--active {
+        width: 270px;
+    }
+
+    .hero3__mini-block {
+        gap: 15px;
+    }
+
+    .hero4 {
+        padding: 55px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero4__text {
+        font-size: 17px;
+        line-height: 40px;
+        width: 270px;
+    }
+
+    .hero4__img {
+        width: 270px;
+        padding: 20px;
+    }
+
+    .hero5__context {
+        width: 270px;
+    }
+
+    .hero5__number {
+        font-size: 35px;
+    }
+
+    .hero5__img {
+        width: 270px;
+    }
+
+    .hero6__mini-block,
+    .hero6__mini-block--activate {
+        width: 280px;
+        padding: 30px 50px;
+        gap: 30px;
+    }
+
+    .hero7__input,
+    .hero7__input--active {
+        width: 280px;
+    }
+    .hero7{
+        padding: 40px 50px 0 50px;
+    }
+
+    .hero7__block {
+        width: 280px;
+    }
+
+    .hero7__input--active {
+        max-width: 300px;
+    }
+
+    .hero7__text {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero__link {
+        width: 60px;
+    }
+
+    .hero__links {
+        gap: 19px;
+        width: 150px;
+        flex-wrap: wrap;
+    }
+
+    .hero7__buttons {
+        gap: 10px;
+    }
+
+    .hero7__button {
+        width: 80px;
+        height: 50px;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .hero7__email {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .hero8{
+        padding: 20px 50px;
+    }
+    .hero8__text{
+        font-size: 25px;
+        text-align: center;
+    }
+    .hero8__block,
+    .hero8__block--active{
+        width: 80px;
+    }
+
+    .hero9__text {
+        font-size: 14px;
+    }
+
+    .hero9__img {
+        width: 80px;
+    }
+=======
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -1112,4 +2252,5 @@ body{
     .hero9__img {
         width: 100px;
     }
+>>>>>>> 3f74edcde2f02e3885042573c79c727e25c5870c
 }
