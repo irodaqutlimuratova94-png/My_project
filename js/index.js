@@ -19,7 +19,12 @@ const sendData = () => {
 
 const ask = document.querySelector(".hero__intro[name='addname']")
 let clientName = prompt("what is your name?")
+if(clientName == true){
 ask.innerHTML += `${clientName}`
+} else{
+  ask.innerHTML += 'Friend'
+}
+
 const button = document.querySelector(".button")
 const handler = () => {
   if (window.scrollY > 1000) {
@@ -54,8 +59,8 @@ const block = document.querySelector(".hero__article")
 const img = document.querySelector(".hero__img")
 const biggerGap = () => {
   let count = window.scrollY
-  block.style.transform = `translateX(${-count*0.2}px)`
-  img.style.transform = `translateX(${count*0.2}px)`
+  block.style.transform = `translateX(${-count*1.2}px)`
+  img.style.transform = `translateX(${count*1.2}px)`
 }
 window.addEventListener("scroll", biggerGap)
 
@@ -65,6 +70,4 @@ const move = () => {
   const centerVerScreen = window.innerHeight / 10
   img2.style.transform = `translate(${event.clientX / 10 - 100}px, ${event.clientY/10}px)`
 }
-
-
 window.addEventListener("mousemove", move)
